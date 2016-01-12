@@ -1,0 +1,7 @@
+{% if site.environment == 'development' %}
+  <script src="{{ site.baseurl }}/bower_components/jquery/dist/jquery.js"></script>
+  <script src="{{ site.baseurl }}/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+  <script src="{{ site.baseurl }}/js/main.js"></script>
+{% else %}
+  <script src="{{ site.baseurl }}/js/main.min.js"></script>
+{% endif %}

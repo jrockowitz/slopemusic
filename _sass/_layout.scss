@@ -1,0 +1,107 @@
+/**
+ * Contains Bootstrap layout overrides.
+ */
+
+/**
+ * Body
+ */
+body {
+  margin: 50px 0 0 0;
+}
+
+/**
+ * Header/Nav bar
+ */
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar-brand {
+  font-size: $font-size-base;
+}
+
+.navbar-brand-title, .dropdown-toggle-title {
+  font-variant: small-caps;
+  font-weight: normal;
+  &::first-letter {
+    font-weight: bold;
+  }
+}
+
+.site-image {
+  display: block;
+  border-bottom: 4px solid $navbar-inverse-bg;
+}
+
+/**
+ * Page
+ */
+.page-wrapper {
+  padding: 20px $line-height-computed $line-height-computed $line-height-computed;
+  /* Mobile: Reduce margins and padding by 50%. */
+  @media (max-width: $screen-xs) {
+    padding: 20px ($line-height-computed/2) ($line-height-computed/2) ($line-height-computed/2);
+  }
+}
+
+.page {
+  max-width: $screen-sm;
+  margin: 0 auto;
+  >.page-header {
+    margin-top: 0;
+    border-bottom-width: 4px;
+    h1 {
+      margin-top: 0;
+      small {
+        white-space: nowrap;
+      }
+    }
+  }
+  .page-download {
+    float: right;
+  }
+}
+
+/* Remove padding from columns in Bootstrap 3 http://stackoverflow.com/questions/19562903/remove-padding-from-columns-in-bootstrap-3 */
+@media (max-width: $screen-xs) {
+  .page-content [class*="col-"] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/**
+ * Footer
+ */
+.footer {
+  margin: 0;
+  border-top: 4px solid $navbar-inverse-bg;
+  padding: $line-height-computed 0;
+
+  /* Mobile: Reduce margins and padding by 50%. */
+  @media (max-width: $screen-xs) {
+    padding: ($line-height-computed/2) 0;
+  }
+
+  small {
+    @extend .page;
+    display: block;
+    text-align: center;
+  }
+}
+
+.form-group.required label:after {
+  content:" *";
+  color: $brand-danger;
+}
+
+/**
+ * Jumbotron
+ */
+.jumbotron {
+  margin-bottom: 0;
+
+  h1 {
+    margin-top: 0;
+  }
+}

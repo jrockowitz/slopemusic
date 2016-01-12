@@ -1,0 +1,9 @@
+/**
+ * Contains print styles
+ */
+
+@media print {
+  .print-hide-href:after {
+      content: "" !important;
+  }
+}

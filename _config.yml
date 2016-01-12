@@ -1,0 +1,41 @@
+# Site settings
+title: Slope Music
+subtitle: Park Slope, Brooklyn
+description: >
+  Lessons on piano, guitar, violin, viola, flute, sax, clarinet, trumpet, voice, and bass. Styles we teach include classical, jazz, folk, & rock. We can provide live music at your location.
+baseurl: ""
+url: "http://slopemusic.com"
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "page"
+  - scope:
+      path: work
+      type: work
+    values:
+      layout: "page"
+
+# Build
+markdown: kramdown
+
+# Include hidden directories
+include:
+  - _pages
+
+# Exclude directories
+exclude:
+  - _misc
+  - node_modules
+
+# Gem (for GitHub Pages)
+gems:
+  # Sitemaps for GitHub Pages - https://help.github.com/articles/sitemaps-for-github-pages/
+  - jekyll-sitemap
+  # Redirects on GitHub Pages - https://help.github.com/articles/redirects-on-github-pages/
+  - jekyll-redirect-from
+
+# Environments in Jekyll - http://www.petethompson.net/blog/web/2015/02/28/environments-in-jekyll/
+environment: production

@@ -1,0 +1,19 @@
+- title: About
+  icon: 'fa fa-music'
+  url: /about/
+
+- title: In the News
+  icon: 'fa fa-newspaper-o'
+  url: /news/
+
+- title: Gigs & Events
+  icon: 'fa fa-calendar'
+  url: /events/
+
+- title: Watch & Listen
+  icon: 'glyphicon glyphicon-cd'
+  url: /listen/
+
+- title: Contact
+  icon: 'glyphicon glyphicon-phone-alt'
+  url: /contact/

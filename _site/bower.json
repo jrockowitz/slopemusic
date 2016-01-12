@@ -1,0 +1,15 @@
+{
+  "name": "jrockowitz",
+  "description": "Jacob Rockowitz / The Big Blue House",
+  "homepage": "http://jrockowitz.github.io.git",
+  "version": "0.0.0",
+  "authors": [
+    "Jacob Rockowitz"
+  ],
+  "license": "GPL-3.0",
+  "dependencies": {
+    "bootstrap-sass-official": "3.3.5",
+    "font-awesome": "4.4.0",
+    "jquery": "2.1.4"
+  }
+}

@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<div class="page-wrapper"{% if page.id %} id="{{ page.id }}"{% endif %}>
+  <div class="page">
+
+    <header class="page-header">
+      {% if page.pdf %}
+      <a href="{{ page.pdf }}" class="page-download hidden-print">
+        <span class="fa fa-download" aria-hidden="true"></span>
+        PDF
+      </a>
+      {% endif %}
+
+      <h1>
+        {% if page.icon %}
+          <span class="{{ page.icon }} hidden-print" aria-hidden="true"></span>
+        {% endif %}
+        {{ page.title }}
+        {% if page.subtitle %}
+          <small>{{ page.subtitle }}</small>
+        {% endif %}
+      </h1>
+    </header>
+
+    <article class="page-content">
+      {{ content }}
+    </article>
+
+  </div>
+</div>
