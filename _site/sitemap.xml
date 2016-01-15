@@ -16,9 +16,6 @@
     <loc>http://slopemusic.com/</loc>
   </url>
   <url>
-    <loc>http://slopemusic.com/listen/</loc>
-  </url>
-  <url>
     <loc>http://slopemusic.com/news/</loc>
   </url>
   <url>
@@ -26,5 +23,8 @@
   </url>
   <url>
     <loc>http://slopemusic.com/contact/thanks/</loc>
+  </url>
+  <url>
+    <loc>http://slopemusic.com/videos/</loc>
   </url>
 </urlset>

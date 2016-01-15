@@ -10,9 +10,9 @@
   icon: 'fa fa-calendar'
   url: /events/
 
-- title: Watch & Listen
+- title: Videos
   icon: 'glyphicon glyphicon-cd'
-  url: /listen/
+  url: /videos/
 
 - title: Contact
   icon: 'glyphicon glyphicon-phone-alt'
