@@ -7875,6 +7875,22 @@ body {
     padding-left: 0;
     padding-right: 0; } }
 /**
+ * Image
+ */
+img {
+  float: right;
+  max-width: 300px;
+  margin: 0 0 25px 25px; }
+  @media (max-width: 768px) {
+    img {
+      max-width: 200px; } }
+  @media (max-width: 480px) {
+    img {
+      float: none;
+      max-width: 100%;
+      margin: 0 0 25px 0; } }
+
+/**
  * Footer
  */
 .footer {

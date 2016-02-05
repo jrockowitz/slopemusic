@@ -71,6 +71,26 @@ body {
 }
 
 /**
+ * Image
+ */
+
+img {
+  float: right;
+  max-width: 300px;
+  margin: 0 0 $line-height-computed $line-height-computed;
+
+  @media (max-width: $screen-sm) {
+    max-width: 200px;
+  }
+
+  @media (max-width: $screen-xs) {
+    float: none;
+    max-width: 100%;
+    margin: 0 0 $line-height-computed 0;
+  }
+}
+
+/**
  * Footer
  */
 .footer {
