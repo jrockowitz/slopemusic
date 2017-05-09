@@ -113,11 +113,11 @@ module.exports = function(grunt) {
     },
     exec: {
       build: {
-        cmd: 'jekyll build'
+        cmd: 'bundle exec jekyll build'
       },
       serve: {
         // http://unix.stackexchange.com/questions/102956/how-to-run-a-command-in-the-background-with-a-delay
-        cmd: '(sleep 5; open http://localhost:4000) &\njekyll serve --drafts --watch'
+        cmd: '(sleep 5; open http://localhost:4000) &\nbundle exec jekyll serve --drafts --watch'
       },
       deploy: {
         cmd: 'git add --all; git commit -am"Deploying changes to GitHub"; git push;'
